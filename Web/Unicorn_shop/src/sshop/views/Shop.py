@@ -51,7 +51,7 @@ class ChargeHandler(BaseHandler):
                 commoditys = self.orm.query(Commodity) \
                     .order_by(Commodity.price.asc()).all()
                 return self.render('charge.html', success=1, commoditys=commoditys,
-                                   successmessage="flag{UHJldHR5X1VuMWMwcm4=}")
+                                   successmessage="XBCTF{UHJldHR5X1VuMWMwcm4=}")
             else:
                 commoditys = self.orm.query(Commodity).all()
                 return self.render('charge.html', danger=1, commoditys=commoditys,

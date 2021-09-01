@@ -12,4 +12,4 @@ if($_GET[id] == "admin")
 }
 ?>
 
-Can you anthenticate to this website?
+Do you know the backup file of the website?

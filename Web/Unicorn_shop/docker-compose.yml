@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+
+  web:
+    build: .
+    image: ctftraining/asis_2019_unicorn_shop
+    restart: always
+    environment:
+      - FLAG=XBCTF{UHJldHR5X1VuMWMwcm4=}
+    ports:
+      - "0.0.0.0:6732:6732"
